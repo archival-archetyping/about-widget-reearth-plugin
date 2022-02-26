@@ -1,0 +1,33 @@
+id: about-widget-reearth-plugin
+name: About Widget
+version: 0.1.0
+extensions:
+  - id: about
+    type: widget
+    name: About Widget
+    widgetLayout:
+      defaultLocation:
+        zone: outer
+        section: left
+        area: top
+    schema:
+      groups:
+        - id: default
+          fields:
+            - id: title
+              type: string
+              title: Title
+            - id: subtitle
+              type: string
+              title: Subtitle
+            - id: description
+              type: string
+              title: Description
+            - id: image
+              type: url
+              title: Image URL
+              ui: image
+              availableIf:
+                field: style
+                type: string
+                value: image
