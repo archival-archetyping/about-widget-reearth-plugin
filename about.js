@@ -25,8 +25,6 @@ const html = `
 </div>
 <script>
   const cb = (widget) => {
-    console.log("widget: ", widget);
-
     if (widget && widget.property && widget.property.default) {
       document.getElementById("title").textContent = widget.property.default.title;
       document.getElementById("subtitle").textContent = widget.property.default.subtitle;
